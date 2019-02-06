@@ -1,0 +1,28 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+$font-primary: 'Nunito', sans-serif;
+$font-header: 'Anton';
+//
+
+// colours
+// https://www.marvel.com/comics/issue/44761/cable_and_x-force_2012_1
+
+$orange: rgb(244, 120, 53);
+$orange-dark: rgb(178, 78, 37);
+$grey: rgb(92, 88, 79);
+$ecru: rgb(231, 220, 169);
+$teal: rgb(100, 156, 152);
+$black: rgb(10, 2, 0);
+
+$primary: $grey;
+$link: $orange;
+$link-alt: $orange-dark;
+$background: ecru;
+$highlight: $teal;
+//
+
+// sizes
+$small-padding: 1rem;
+//
