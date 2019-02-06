@@ -1,11 +1,20 @@
 <template>
-  <ul id="nav">
-    <li v-for="tab in tabs" :key="tab.title">
-      <router-link v-bind:to="tab.path">
-        {{ tab.title }}
+  <nav class="row">
+    <div class="three columns" id="brand">
+      <router-link v-bind:to="'/'">
+        pikesley.org
       </router-link>
-    </li>
-  </ul>
+    </div>
+    <div class="nine columns" id="nav-menu">
+      <ul>
+        <li v-for="tab in tabs" :key="tab.title">
+          <router-link v-bind:to="tab.path">
+            {{ tab.title }}
+          </router-link>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -24,16 +33,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
